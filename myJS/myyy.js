@@ -22,7 +22,7 @@
 
 // // boolen
 // // true - від 1-одиниці
-// //falsy - 0
+// //fals - 0
 
 // //false | null | undefined | "" - це пустий рядок | 0 | NaN - falsy values хибні значення
 
@@ -125,15 +125,65 @@
 
 // Функції
 // Function Declaration
-function greet(name) {
-    console.log('Привіт - ', name)
+// function greet(name) {
+//     console.log('Привіт - ', name)
+// }
+// greet('Женя')
+
+// // Function Exprission - коли функцію ми робимо з перемінної
+
+// const greet2 = function greet2(name) {
+//     console.log('Привіт 2 - ', name)
+// }
+
+// greet2('Марічка')
+
+
+// function calculateTotalPrice(orderedQuantity, pricePerItem) {
+//     // Change code below this line
+//     const totalPrice = orderedQuantity * pricePerItem;
+
+//     // Change code above this line
+//     return totalPrice;
+// };
+
+// orderedQuantity(5, 8, 3, 1, 12);
+// pricePerItem(100, 60, 400, 3500, 70);
+// calculateTotalPrice();
+
+
+// Цикли  розглядаєм основний і найпоширеніший  - for
+
+// Задача  - написати цикл фор, який виводить в консоль браузера числа від мін до макс, але тільки якщо число 5
+
+const max = 100;
+const min = 20;
+// Рішення номер 1
+for (let i = min; i <= max; i++) {
+    if (i % 5 === 0) {
+        // console.log(i);
+    }
 }
-greet('Женя')
 
-// Function Exprission - коли функцію ми робимо з перемінної
+// Рішення номер 2 - не дуже рішення
 
-const greet2 = function greet2(name) {
-    console.log('Привіт 2 - ', name)
+for (let i = min; i <= max; i += 5) {
+    // console.log(i)
+
 }
 
-greet2('Марічка')
+// Рішення номер 3
+
+for (let i = min; i <= max; i++) {
+    if (i % 5 !== 0) continue;
+    // console.log(i);
+
+}
+
+// рішення 4, робим зворотній відрахунок
+
+for (let i = max; i >= min; i--) {
+    if (i % 5 === 0) {
+        console.log(i);
+    }
+}
