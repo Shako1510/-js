@@ -156,34 +156,34 @@
 
 // Задача  - написати цикл фор, який виводить в консоль браузера числа від мін до макс, але тільки якщо число 5
 
-const max = 100;
-const min = 20;
-// Рішення номер 1
-for (let i = min; i <= max; i++) {
-    if (i % 5 === 0) {
-        // console.log(i);
-    }
-}
+// const max = 100;
+// const min = 20;
+// // Рішення номер 1
+// for (let i = min; i <= max; i++) {
+//     if (i % 5 === 0) {
+//         // console.log(i);
+//     }
+// }
 
-// Рішення номер 2 - не дуже рішення
+// // Рішення номер 2 - не дуже рішення
 
-for (let i = min; i <= max; i += 5) {
-    // console.log(i)
+// for (let i = min; i <= max; i += 5) {
+//     // console.log(i)
 
-}
+// }
 
-// Рішення номер 3
+// // Рішення номер 3
 
-for (let i = min; i <= max; i++) {
-    if (i % 5 !== 0) continue;
-    // console.log(i);
+// for (let i = min; i <= max; i++) {
+//     if (i % 5 !== 0) continue;
+//     // console.log(i);
 
-}
+// }
 
-// рішення 4, робим зворотній відрахунок
+// // рішення 4, робим зворотній відрахунок
 
-for (let i = max; i >= min; i--) {
-    if (i % 5 === 0) {
-        console.log(i);
-    }
-}
+// for (let i = max; i >= min; i--) {
+//     if (i % 5 === 0) {
+//         console.log(i);
+//     }
+// }
